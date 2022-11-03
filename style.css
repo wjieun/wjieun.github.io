@@ -1,0 +1,26 @@
+.navbar {
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+th, td {
+    text-align: center;
+}
+
+.body-class {
+    padding: 30px;
+}
+
+#selfie {
+    color: red;
+    text-decoration: underline;
+}
+
+.carousel {
+    width: 600px;
+}

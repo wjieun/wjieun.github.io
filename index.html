@@ -1,11 +1,119 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        
+        <title>My Profile</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <section>
-            <h1>My Profile</h1>
-        </section>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand nav-title" href="#">My Profile</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://github.com/wjieun">github</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Favorite YouTube Channels
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://www.youtube.com/user/SKTTeam1st" style="font-weight: bold;">T1</a></li>
+                        <li><a class="dropdown-item" href="https://www.youtube.com/c/T1Zeus/">T1 Zeus</a></li>
+                        <li><a class="dropdown-item" href="https://www.youtube.com/c/T1OnerOfficial/">T1 Oner</a></li>
+                        <li><a class="dropdown-item" href="https://www.youtube.com/c/SKTT1Faker_official/">T1 Faker</a></li>
+                        <li><a class="dropdown-item" href="https://www.youtube.com/c/T1Gumayusi/">T1 Gumayusi</a></li>
+                        <li><a class="dropdown-item" href="https://www.youtube.com/c/T1Keria/">T1 Keria</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="https://www.youtube.com/user/hyeyounga">Yeosu Unnie</a></li>
+                        <li><a class="dropdown-item" href="https://www.youtube.com/channel/UC9MujNQL4vQwX9kMpmQPIKw/featured">suzy</a></li>
+                        <li><a class="dropdown-item" href="https://www.youtube.com/c/%EB%B9%A0%EB%8D%94%EB%84%88%EC%8A%A4">BDNS</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                    <strong class="me-auto">Hello</strong>
+                    <small>11 mins ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                    Hello, world! This is a toast message.
+                    </div>
+                </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="body-class">
+            <h3>1. Information</h3>
+            <table class="table table-bordered">
+                <tbody>
+                <tr>
+                    <th>name</th>
+                    <td>Jieun Woo</td>
+                </tr>
+                <tr>
+                    <th>affiliation</th>
+                    <td>SKKU College of Computing</td>
+                </tr>
+                <tr>
+                    <th>email</th>
+                    <td>wjieun@g.skku.edu</td>
+                </tr>
+                <tr>
+                    <th>interest</th>
+                    <td>LCK <del>(especially T1...)</del></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h3 id="selfie">2. My Selfies</h3>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="photo.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="photo2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="photo3.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <script>
+            /* JS Code */
+        </script>
     </body>
 </html>
